@@ -1,0 +1,648 @@
+:root {
+    --blue: rgb(9, 249, 249);
+    --little-blue: rgb(58, 61, 212);
+    --big-blue: rgb(94, 96, 186);
+    --button-blue: rgb(67, 130, 219);
+    --red: rgb(211, 34, 34);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAV / Header */
+
+body {
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Warnes', cursive;
+    color: white;
+}
+
+a:link { 
+    text-decoration:none; 
+} 
+
+header {
+    background-image: linear-gradient(
+        rgba(0, 242, 96, 0.4),
+        rgba(7, 117, 230, 0.3)
+      ),
+      url(img/header.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+nav {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    padding-right: 40px;
+    color: white;
+}
+
+div img {
+    width: 1920px;
+}
+
+/* Title */
+#title {
+    display: flex;
+    flex-direction: column;
+    padding: 250px 0 0 250px;
+}
+
+#title h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#title h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#title p {
+    color: #fff;
+}
+
+#title button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background: none;
+    font-size: 18px;
+    border: #fff solid 1px;
+    color: #fff;
+    margin-right: 8px;
+}
+
+#title .but1 {
+    background: #fff;
+    color: rgb(100, 100, 216);
+    height: 40px;
+}
+
+#title .but2 {
+    height: 40px;
+    width: 190px;
+}
+
+#title .bu {
+    display: flex;
+}
+
+#title button:hover {
+    color: white;
+    transition: 1s;
+    background-color: var(--blue);
+    border: var(--blue) solid 1px;
+}
+
+/*----------------------------- Section 1 -----------------------------*/
+
+#sect1 i:hover {
+    transform: translate(20px);
+    transition: 0.8s;
+    color: black;
+}
+
+#sect1 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#sect1 h2.title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+
+#sect1 img {
+    display: flex;
+    width: 800px;
+    z-index: 5;
+}
+
+#sect1 article.info{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+#sect1 .zzz {
+    display: flex;
+    width: 650px;
+    line-height: 1.5;
+    position: relative;
+    z-index: 6;
+}
+
+#sect1 .zzz p {
+    padding-bottom: 20px;
+}
+
+#sect1 th {
+    display: flex;
+    padding-top: 20px;
+}
+
+#sect1 td.text {
+    display: flex;
+}
+
+#sect1 .tabtitle {
+    font-size: 30px;
+}
+
+#sect1 td i {
+    color: var(--red);
+    display: flex;
+    font-size: 40px;
+    padding-right: 20px;
+    transition: 0.8s
+}
+
+/*----------------------------- Section 2 -----------------------------*/
+
+#sect2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+#sect2 h2 {
+    padding: 60px 0 0 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#sect2 h3 {
+    text-transform: uppercase;
+}
+
+#sect2 img {
+    width: 250px;
+    padding-top: 30px;
+}
+
+#sect2 p {
+    margin: 0 30px 30px 30px;
+}
+
+#sect2 .cont1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0 80px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: var(--blue);
+    width: 100px;
+    content: " ";
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+#sect2 .voyage {
+    background-color: #fff;
+    box-shadow: 0px 0px 21px 4px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 0 20px;
+}
+
+/*----------------------------- Section 3 -----------------------------*/
+
+#sect3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sect3 h2 {
+    padding: 60px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1.1fr 0.2fr 1.1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    height: 700px;
+    width: 80%;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "one two two two"
+      "three three four five";
+    padding-bottom: 100px;
+  }
+
+  .one { 
+      grid-area: one; 
+      background: url(img/galerie/femmes-zanzibar.jpg);
+      border-radius: 10px;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  
+  .three { 
+      grid-area: three; 
+      background: url(img/galerie/epices-zanzibar.jpg);
+      border-radius: 10px;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  
+  .four { 
+      grid-area: four; 
+      background: url(img/galerie/village-pecheur-zanzibar.jpg);
+      border-radius: 10px;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+  
+  .two { 
+      grid-area: two; 
+      background: url(img/galerie/plage-zanzibar.jpg);
+      border-radius: 10px;
+      height: 100%;
+      background-position: top;
+      background-size: cover;
+    }
+  
+  .five { 
+      grid-area: five; 
+      background: url(img/galerie/safari-blue.jpg);
+      border-radius: 10px;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+/*----------------------------- Section 4 -----------------------------*/
+
+ #sect4 { /* Parallaxe en com */
+    background-image: linear-gradient(
+        rgba(0, 242, 96, 0.4),
+        rgba(7, 117, 230, 0.3)
+      ),
+      url(img/the-paysage.jpg);
+    background-position: center; /* Centre la position de l'image */
+    background-attachment: fixed; /* Fixe l'image pendant le scroll */
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    background-size: cover; /* L'image prendra 100% de l'espace, quitte à la crop */
+    padding-bottom: 30px;
+}
+
+#sect4 h2 {
+    padding: 50px;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#sect4 .cont2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sect4 .nameone {
+    display: flex;
+}
+
+#sect4 .nameone p {
+    display: flex;
+    color: white;
+    font-style: italic;
+    margin-left: 10px;
+    align-items: center;
+}
+
+#sect4 .nameone img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#sect4 .nametwo {
+    display: flex;
+}
+
+#sect4 .nametwo p {
+    display: flex;
+    color: white;
+    font-style: italic;
+    margin-left: 10px;
+    align-items: center;
+}
+
+#sect4 .nametwo img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#sect4 .namethree {
+    display: flex;
+}
+
+#sect4 .namethree p {
+    display: flex;
+    color: white;
+    font-style: italic;
+    margin-left: 10px;
+    align-items: center;
+}
+
+#sect4 .namethree img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+#sect4 .pad {
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: white;
+}
+
+#sect4 .pad i {
+    font-size: 30px;
+    opacity: 50%;
+    font-style: italic;
+    padding-right: 5px;
+}
+
+/*----------------------------- Section 5 -----------------------------*/
+
+#sect5 h2 {
+    padding: 30px;
+    font-size: 40px;
+}
+
+#sect5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+#sect5 h3 {
+    margin: 10px 0 0 10px
+}
+
+#sect5 p {
+    margin: 0 0 5px 10px
+}
+
+#sect5 .mainsect5 {
+    display: flex;
+}
+
+#sect5 article {
+    width: 1100px;
+    margin: 15px 15px 0 15px;
+}
+
+#sect5 .day {
+    box-shadow: 0px 0px 25px 9px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    line-height: 2;
+    height: 400px;
+    margin-bottom: 100px;
+    width: 400px;
+}
+
+#sect5 table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blue {
+    box-shadow: 0px 0px 25px 9px rgba(0,0,0,0.2);
+    background-color: var(--blue);
+    color: white;
+    border-radius: 15px;
+    width: 400px;
+}
+
+#sect5 .blue h3 {
+    color: black;
+}
+
+.underbutton {
+    display: flex;
+    margin: 0 auto;
+    background: var(--big-blue);
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: var(--big-blue) solid 1px;
+}
+
+#sect5 button:hover {
+    color: white;
+    transition: 1s;
+    background-color: var(--little-blue);
+    border: var(--big-blue) solid 1px;
+}
+
+/*----------------------------- Section 6 -----------------------------*/
+
+#sect6 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+#sect6 {
+    display: flex;
+    justify-content: center;
+}
+
+.mainsect6 {
+    display: flex
+}
+
+article.sect6 {
+    width: 600px;
+    display: flex;
+}
+
+article.fin p {
+    display: flex;
+}
+
+#sect6 .fin {
+    display: flex;
+    width: 40%;
+    flex-direction: column
+}
+
+.col {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.center {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+#msg {
+    width: 100%;
+}
+
+.underb {
+    display: flex;
+    margin: 0 auto;
+    background: var(--big-blue);
+    color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: var(--big-blue) solid 1px;
+}
+
+/*----------------------------- Footer -----------------------------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    color: rgb(162, 147, 147);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/*----------------------------- Media QUERIES -----------------------------*/
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+    nav {
+        height: 160px;
+        align-items: center;
+        line-height: 1.5;
+        transition: 1s;
+    }
+    #title .mid {
+        width: 80%;
+        margin: auto;
+    }
+    #sect3 .container {
+        flex-direction: column;
+    }
+    div.container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1200px ) {
+    #sect1 .info {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    #sect1 img {
+        opacity: 60%;
+        position: absolute;
+        width: 80%;
+    }
+    #sect2 .voyage {
+        margin-bottom: 20px;
+    }
+    #sect4 .cont2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sect5 .mainsect5{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sect6 {
+        flex-wrap: wrap;
+    }
+
+    iframe {
+        width: 400px;
+        padding-top: 10px;
+    }
+
+}
+

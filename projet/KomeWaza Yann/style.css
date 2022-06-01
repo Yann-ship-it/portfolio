@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    color:#003E52;
+
+}
+/************************* Header *************************/
+
+header {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    color: #003E52; 
+    margin: 0 10px 0 10px;
+}
+
+li:hover {
+    color: #6cadc2;
+}
+
+/************************* Sect1 *************************/
+
+.epices {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article.text {
+    max-width: 410px;
+    text-align: end;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+article.text h2 {
+    margin-bottom: 5px;
+    padding-top: 42px;
+}
+
+article.text h3 {
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+div.image img {
+    width: 1920px;
+    margin: 0;
+}
+
+div.slider img{
+    width: 2220px;
+    margin: 0;
+}
+
+/************************* Sect2 *************************/
+
+.signature {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 620px;
+}
+
+.signature h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.signature .sous {
+    background-color: #003E52;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/************************* Footer *************************/
+
+footer {
+    height: 200px;
+    background-color: #003e52;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h2 {
+    color: #fff;
+
+}
+
+footer p {
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+}

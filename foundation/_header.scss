@@ -1,0 +1,91 @@
+@import './var';
+
+header {
+    color: white;
+    z-index: 5;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h1 {
+        font-size: 50px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+        align-items: flex-end;
+
+        h2 {
+            color: white;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+
+        hr {
+            width: 3%;
+        }
+
+        p {
+            width: 22%;
+            opacity: 0.6;
+            text-align: end;
+        }
+    }
+
+    .reseaux {
+        display: flex;
+        gap: 20px;
+        font-size: 25px;
+        margin: 0 auto;
+        width: 70%;
+        a {
+            color: white;
+            transition: 1s;
+        }
+        a:hover {
+            transition: 1s;
+            transform: scale(2);
+            color: $sous;
+        }
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 90%;
+    z-index: 10;
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+
+        li {
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+            transition: 1s;
+        }
+
+        li:hover {
+            transition: 1s;
+            color: rgb(77, 77, 221);
+        }
+    }
+}
+
+img {
+    z-index: -1;
+    margin: 0 auto;
+    width: 30%;
+    position: absolute;
+    right: 900px;
+}

@@ -1,0 +1,39 @@
+@import './var';
+
+#sect1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .contcard {
+        display: flex;
+        gap: 40px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .card1{
+            border-radius: 3%;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            box-shadow: 10px 5px 5px $thirdcolor;
+            display: flex;
+            border-radius: 50%;
+            width: 200px;
+            border: 1px solid rgb(73, 68, 68);
+            height: 200px;
+            h2 {
+                color: white;
+                padding-top: 10px;
+                font-size: 20px;
+                margin: 0 auto;
+            }
+            i {
+                color: white;
+                font-size: 50px;
+            }
+            img {
+                width: 20px;
+            }
+        }
+    }
+}

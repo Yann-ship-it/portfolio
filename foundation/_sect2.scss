@@ -1,0 +1,79 @@
+@import './var';
+
+#sect2 {
+    .inf {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 70%;
+        max-width: 30%;
+        padding: 50px 0 50px 0;
+        margin: 0 auto;
+
+        h2 {
+            color: white;
+
+            padding-bottom: 15px;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+
+        p {
+            padding: 15px 0 15px 0;
+            opacity: 0.6;
+        }
+    }
+    .container {
+        display: flex;
+        padding: 50px 0 50px 0;
+        font-size: 40px;
+        gap: 20px;
+        justify-content: center;
+        .one{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+            height: 200px;
+            background-image: url(img/card.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .two{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+            height: 200px;
+            background-image: url(img/zanzibar.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .three{
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+            height: 200px;
+            background-image: url(img/kome.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .four{ 
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+            height: 200px;
+            background-image: url(img/glace.png);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "poppins";
+    scroll-behavior: smooth;
+    font-family: "Torus Notched SemiBold";
+}
+
+@font-face {
+    font-family: "Torus Notched SemiBold";
+    src: url("/font/Torus\Notched\SemiBold.ttf") format("truetype");
+}
+
+
+h1
+h2
+h3
+h4
+h5
+h6
+button {
+    font-family: "Torus Notched SemiBold";
+}
+
+body {
+    max-width: 1920px;
+    
+}
+/*----------- HEADER -----------*/
+
+header {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .container .menu {
+    display: flex;
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container ul a {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 30px;
+    color: black;
+}
+
+@media (max-width: 1500px) {
+    header {
+        position: relative;
+        background-color: #66aefc;
+    }
+
+    header .container {
+        width: 100%;
+    }
+
+    header .container ul a {
+        color: white;
+    }
+}
+
+@media (max-width: 750px) {
+    header .logo {
+        display: none;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    header .container ul a {
+        margin: 0 10px;
+    }
+}
+
+/*----------- SECTION 1 -----------*/
+
+@media (min-width: 1500px) {
+.sect1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/13.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    }
+
+.bgresponsive {
+    display: none;
+}
+}
+
+.sect1 .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.sect1 h1 {
+    color: #31489f;
+    font-size: 8em;
+    margin-bottom: 70px;
+}
+
+.sect1 button {
+    position: relative;
+    height: 70px;
+    width: 250px;
+    border-radius: 50px;
+    border: 3px solid #31489f;
+    background-color: white;
+    font-size: 1.4em;
+    color: #31489f;
+    transition: 0.3s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sect1 button::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: #31489f;
+    top: -4px;
+    left: -5px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.sect1 button:hover {
+    color: white;
+    width: 280px;
+}
+
+.sect1 button:hover::before, 
+.sect3 button:hover::before,
+.sect4 button:hover::before{
+    transform: translate(0%);
+}
+
+.sect1 button i, 
+.sect3 button i,
+.sect4 button i{
+    transform: scale(0);
+    margin: -10px;
+    transition: 0.3s;
+}
+
+.sect1 button:hover i, 
+.sect3 button:hover i,
+.sect4 button:hover i{
+    transform: scale(1);
+    margin-left: 10px;
+}
+
+.sect1 a {
+    height: 70px;
+    width: 250px;
+}
+
+@media (max-width: 1500px) {
+    .sect1 .container {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .sect1 {
+        height: 100%;
+        margin-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .sect1 .bgresponsive {
+        margin-top: 100px;  
+    }
+
+    .sect1 .bgresponsive img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 950px) {
+    .sect1 h1 {
+        font-size: 5em;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .sect1 h1 {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sect1 h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+}
+
+/*----------- Transition -----------*/
+
+.transition {
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-30%);
+}
+
+.transition img{
+    width: 100%;
+    filter: drop-shadow(0px 10px 5px #aac4e8);
+}
+
+/*----------- SECTION 2 -----------*/
+
+.sect2 {
+    position: relative;
+    z-index: 2;
+    background-color: #232323;
+    padding-top: 120px;
+}
+
+.sect2 .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect2 .title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 100px;
+}
+
+.sect2 .title::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #31489f;
+    clip-path: polygon(49% 100%, 0 0, 100% 0);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenttop, .contentbot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sect2 .spacer {
+    width: 70px;
+    height: 7px;
+    border-radius: 0 50px 0;
+    margin: 25px 0 25px;
+    background-color: royalblue;
+}
+
+.sect2 .left, .right {
+    color: white;
+}
+
+.sect2 .h2 {
+    font-size: 2.5em;
+}
+
+.sect2 .titre {
+    display: flex;
+    align-items: center;
+}
+
+.sect2 .point {
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    background-color: royalblue;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+
+.sect2 p {
+    max-width: 600px;
+    line-break: anywhere;
+}
+
+
+@media (min-width: 1500px) {
+.content-top .left {
+    max-width: 700px;
+    }
+.contentbot .right {
+    max-width: 700px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .contenttop{
+        flex-direction: column;
+    }
+
+    .contenttop img, .contentbot img{
+        width: 90%
+    }
+
+    .contentbot {
+        flex-direction: column-reverse;
+    }
+
+    .contenttop, .contentbot {
+        margin: 0px 0px 50px 0px;
+    }
+
+    .sect2 .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left, .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .point {
+        display: none;
+    }
+
+    .sect2 p{
+        max-width: 900px;
+        margin: 0 50px;
+    }
+
+    .sect2 .titre {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
+
+/*----------- SECTION 3 -----------*/
+
+.sect3 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 1080px;
+    background-image: url(svg/1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: right;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(5px 5px 10px);
+}
+
+.sect3 .left p{
+    margin: 20px 0;
+}
+
+.sect3 .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sect3 h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.sect3 .spacer {
+    width: 70px;
+    height: 7px;
+    border-radius: 0 50px 0;
+    margin: 25px 0 25px;
+    background-color: royalblue;
+}
+
+.sect3 p {
+    color: white;
+    max-width: 570px;
+    line-break: anywhere;
+    margin-bottom: 20px;
+}
+
+.sect3 h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.sect3 .right img {
+    width: 100%;
+}
+
+@media (max-width: 1450px) {
+    .sect3 .right {
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .sect3 .container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sect3 .point {
+    width: 20px;
+    margin-right: 10px;
+    height: 20px;
+    background-color: royalblue;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+
+.sect3 p {
+    margin: 0 20px;
+}
+
+.sect3 button,
+.sect4 button {
+    position: relative;
+    height: 70px;
+    width: 250px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: transparent;
+    font-size: 1.4em;
+    color: white;
+    transition: 0.3s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sect3 button::before,
+.sect4 button::before {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 280px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: white;
+    top: -4px;
+    left: -5px;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.sect3 button:hover,
+.sect4 button:hover {
+    color: royalblue;
+    width: 280px;
+}
+
+/*----------- SECTION 4 -----------*/
+
+.sect4 {
+    position: relative;
+    height: 750px;
+    background-image: url(svg/2.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    z-index: 2;
+    filter: drop-shadow(3px 5px 5px #232323);
+    top: -2px;
+}
+
+.sect4 .content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.sect4 .left {
+    margin: 0 170px 0px 110px;
+}
+
+.sect4 .mid h1{
+    font-size: 3em;
+    color: white;
+}
+
+.sect4 .mid h2{
+    font-size: 2em;
+    color: white;
+}
+
+.sect4 .mid p{
+    max-width: 400px;
+    color: white;
+    margin: 50px 0;
+}
+
+
+@media (max-width: 1650px) {
+    .sect4 .right{
+        display: none;
+    }
+
+@media (max-width: 1650px) {
+    .sect4 .content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        color: #31489f;
+    }
+
+    .sect4 .left{
+        margin: 0px;
+    }
+
+    .sect4 .left img {
+        width: 300px;
+    }
+
+    .sect4 .mid p{
+        margin: 50px auto;
+        max-width: 550px;
+        padding: 0px 10px;
+    }
+
+    .sect4 .mid {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+.sect4 .mid h2,
+.sect4 .mid h1,
+.sect4 .mid p{
+    color:#4d6de0;
+}
+
+.sect4 button {
+    color:#4d6de0;
+    border: 3px solid #4d6de0;;
+    }
+}}
+
+/*----------- Puces -----------*/
+
+.onglet-side {
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    z-index: 999;
+}
+
+.onglet-side a {
+    height: 12px;
+    width: 12px;
+    margin: 5px 0;
+    background-color: white;
+    border: 3px solid royalblue;
+    border-radius: 50px;
+}
+
+.onglet-side a.active {
+    height: 12px;
+    width: 12px;
+    margin: 5px 0;
+    background-color: rgb(62, 65, 228);
+    border: 3px solid royalblue;
+    border-radius: 50px;
+}
+
+
+@media (max-width: 1000px) {
+    .onglet-side{
+        display: none;
+    }}
